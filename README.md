@@ -1,20 +1,30 @@
+# GPG Suite Working Configuration in MacOS Tahoe
+
+<br>
+
 ## 1. Download and Install GPG Suite
 
 ```bash
 https://gpgtools.org/
 ```
 
+<br>
+
 ## 2. Install 'gnupg' from homebrew
 
 ```bash
 brew install gnupg
 ```
+
+<br>
    
 ## 3. Install 'pinentry-mac' from homebew
 
 ```bash
 brew install pinentry-mac
 ```
+
+<br>
    
 ## 4. Create symlinks
 
@@ -29,8 +39,11 @@ sudo ln -sf /opt/homebrew/bin/dirmngr /usr/local/MacGPG2/bin/dirmngr
 sudo ln -sf /opt/homebrew/bin/gpgconf /usr/local/MacGPG2/bin/gpgconf
  ```
 
+<br>
+
 ## 5. Create or modify this hidden files in your computer under the home folder
 
+<br>
 
 ### ~/.gnupg/gpg.conf
 ---
@@ -84,6 +97,8 @@ keyserver-options timeout=10
 
 ```
 
+<br>
+
 ### ~/.gnupg/gpg-agent.conf
 ---
 
@@ -115,6 +130,8 @@ no-allow-external-cache
 no-allow-mark-trusted
 
 ```
+
+<br>
 
 ### ~/.gnupg/dirmngr.conf
 ---
